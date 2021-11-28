@@ -30,5 +30,5 @@ You can try `kyou` to run:
 ### Using Go
 
 ```
-❯ go install github.com/aumyf/kyou
+❯ go install github.com/aumyf/kyou@latest
 ```

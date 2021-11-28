@@ -17,6 +17,8 @@ creating /home/user/kyou/2021/11/26/recoil
 
 ### Using [Nix](https://nixos.org)
 
+#### Nix Flakes (Nix >= 2.4)
+
 ```
 ❯ nix profile install github:aumyf/kyou
 ```
@@ -25,6 +27,16 @@ You can try `kyou` to run:
 
 ```
 ❯ nix shell github:aumyf/kyou
+```
+
+#### Nix Channels
+
+```
+❯ nix-channel --add https://github.com/aumyf/kyou/archive/master.tar.gz kyou
+
+❯ nix-channel --update
+
+❯ nix-env -iA
 ```
 
 ### Using Go

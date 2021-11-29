@@ -36,7 +36,7 @@ You can try `kyou` to run:
 
 ❯ nix-channel --update
 
-❯ nix-env -iA 
+❯ nix-env -iA kyou
 ```
 
 ### Using Go

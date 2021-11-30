@@ -4,13 +4,15 @@
 
 ```shell
 # on 2021-11-26
-❯ kyou recoil # to create 'recoil' in today's directory
-creating /home/user/kyou/2021/11/26/recoil
+❯ kyou foo # to create 'foo' in today's directory
+/home/user/kyou/2021/11/26/foo
 
 ❯ kyou where  # to print today's directory 
 /home/user/kyou/2021/11/26
 
 ❯ cd `kyou where` # to move to today's directory
+
+❯ cd `kyou bar` # to create `bar` and move to it
 ```
 
 ## Installation

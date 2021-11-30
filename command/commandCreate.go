@@ -34,6 +34,7 @@ func actionCreate(c *cli.Context) error {
 				}
 				return nil
 			},
+			Stdout: os.Stderr,
 		}
 
 		result, err := p.Run()
@@ -46,11 +47,12 @@ func actionCreate(c *cli.Context) error {
 	}
 	dir := filepath.Join(todaysDir, dirTitle)
 
-	fmt.Printf("creating %v\n", dir)
 	err = os.MkdirAll(dir, 0o755)
 	if err != nil {
 		return err
 	}
+
+	fmt.Printf("%v\n", dir)
 
 	return nil
 

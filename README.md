@@ -25,7 +25,7 @@
 ❯ nix profile install github:aumyf/kyou
 ```
 
-You can try `kyou` to run:
+You can try `kyou` without installing by running:
 
 ```
 ❯ nix shell github:aumyf/kyou

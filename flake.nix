@@ -13,6 +13,11 @@
             kyou = pkgs.callPackage ./default.nix { };
           };
         defaultPackage = packages.kyou;
+
+        checks = {
+          build = packages.kyou;
+        };
+
         apps.kyou = flake-utils.lib.mkApp { drv = packages.kyou; };
         defaultApp = apps.kyou;
         devShell = pkgs.callPackage ./shell.nix { };

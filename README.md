@@ -5,10 +5,10 @@
 ```shell
 # on 2021-11-26
 ❯ kyou foo # to create 'foo' in today's directory
-/home/user/kyou/2021/11/26/foo
+/home/user/kyou/2021-11-26-foo
 
-❯ kyou where  # to print today's directory 
-/home/user/kyou/2021/11/26
+❯ kyou where  # to print today's directory
+/home/user/kyou/2021-11-26
 
 ❯ cd `kyou where` # to move to today's directory
 

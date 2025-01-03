@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
-	"path/filepath"
 
 	"github.com/manifoldco/promptui"
 	"github.com/urfave/cli/v2"
@@ -45,7 +44,7 @@ func actionCreate(c *cli.Context) error {
 
 		dirTitle = result
 	}
-	dir := filepath.Join(todaysDir, dirTitle)
+	dir := todaysDir + "-" + dirTitle
 
 	err = os.MkdirAll(dir, 0o755)
 	if err != nil {

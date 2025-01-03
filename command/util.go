@@ -14,7 +14,7 @@ func getTodaysDir() (string, error) {
 		return "", errors.New("environment variable $HOME must be defined")
 	}
 
-	const layout = "2006/01/02"
+	const layout = "2006-01-02"
 	date := time.Now().Format(layout)
 
 	return filepath.Join(home, "kyou", date), nil

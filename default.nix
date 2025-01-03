@@ -4,5 +4,5 @@
 
   src = ./.;
 
-  vendorSha256 = "txbY5x88iLY3wtZmDuiVUo+s7DFa4U/8JvCNDfDcq1A=";
+  vendorHash = "sha256-txbY5x88iLY3wtZmDuiVUo+s7DFa4U/8JvCNDfDcq1A=";
 }
